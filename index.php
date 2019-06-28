@@ -9,6 +9,7 @@
 namespace think;
 //如果出现一片空白，请检查PHP版本
 //环境要求：PHP>=5.6 mysql 建议在5.5以上
+define('APP_DEBUG', true);
 define('ENTR_PATH','');
 define('ROOT_PATH',__DIR__.'/');
 define('DS',DIRECTORY_SEPARATOR);

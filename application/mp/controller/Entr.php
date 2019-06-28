@@ -14,6 +14,7 @@ use app\common\model\MpFriends;
 use app\common\model\MpMsg;
 use app\common\model\Qrcode;
 use think\Db;
+use think\facade\Log;
 
 class Entr
 {
@@ -215,6 +216,7 @@ class Entr
                 break;
 
         }
+        Log::debug("无响应消息");
         $options = session('mp_options');
         $weObj = new \Wechat($options);
         $weObj->valid();

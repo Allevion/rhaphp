@@ -11,6 +11,7 @@
 namespace app\mp\controller;
 
 use app\common\model\Picture;
+use function json_decode;
 use think\Db;
 use think\Env;
 use think\facade\Request;
@@ -387,6 +388,7 @@ class Upload {
                 'message' => '上完成功'
             ];
             return json_encode($res);
+//            require json_decode([]);
         } else {
             // 上传失败获取错误信息
             $res = [

@@ -12,6 +12,7 @@ namespace app\mp\controller;
 
 use app\common\model\MpMsg;
 use think\facade\Request;
+use think\facade\Log;
 
 class Message extends Base
 {
